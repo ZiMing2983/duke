@@ -1,6 +1,0 @@
-T | 0 | gym
-T | 1 | work
-D | 1 | study | Sunday
-E | 1 | project | Jan | Feb
-S | 1 | project | Jan | Feb
-T | s | project | Jan | Feb

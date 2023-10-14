@@ -90,9 +90,21 @@ class FileRead extends FileHandler {
         }catch (FileNotFoundException e){
             System.out.println("No saved tasks found, proceed to start.");
         }catch (FileCorruptedException e) {
-            System.out.printf("%s\n%s\n", e.getMessage(), MessageDisplay.LINE_BREAK);
+            System.out.printf("%s\n%s\n", e.getMessage(), UserInterface.MessageDisplay.LINE_BREAK);
         }catch (IOException e) {
             e.printStackTrace(); // Handle any exceptions that may occur
         }
+    }
+}
+
+abstract class FileException extends Exception {
+    public FileException(String message) {
+        super(message);
+    }
+}
+
+class FileCorruptedException extends FileException {
+    public FileCorruptedException() {
+        super("File is corrupted, proceed to start a new session without data loading.");
     }
 }

@@ -1,0 +1,3 @@
+D | 0 | homework | june 6th
+E | 0 | project meeting | saturday 2pm | 4pm
+T | 1 | join sports club
